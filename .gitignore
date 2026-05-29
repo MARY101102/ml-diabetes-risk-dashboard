@@ -1,0 +1,38 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Node modules
+node_modules/
+
+# React build files
+frontend/dist/
+frontend/build/
+
+# Backend cache and logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+
+# Saved generated reports later
+backend/generated_reports/
+
+# Database local files
+*.db
