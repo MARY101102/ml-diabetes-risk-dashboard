@@ -1,0 +1,198 @@
+{
+    "project": "Machine Learning-Based Diabetes Risk Estimation Dashboard",
+    "version": "diabetes_features_v1",
+    "target": {
+        "name": "Diabetes_binary",
+        "meaning": {
+            "0": "No diabetes",
+            "1": "Prediabetes or diabetes"
+        },
+        "important_note": "The positive class represents the dataset label for prediabetes or diabetes. It must not be displayed as a confirmed medical diagnosis."
+    },
+    "excluded_features_v1": {
+        "features": [
+            "Sex",
+            "Education",
+            "Income"
+        ],
+        "reason": "Excluded from the first public-facing version because they are sensitive demographic or socioeconomic variables."
+    },
+    "features": [
+        {
+            "name": "HighBP",
+            "label": "High Blood Pressure",
+            "type": "binary",
+            "allowed_values": {
+                "0": "No",
+                "1": "Yes"
+            }
+        },
+        {
+            "name": "HighChol",
+            "label": "High Cholesterol",
+            "type": "binary",
+            "allowed_values": {
+                "0": "No",
+                "1": "Yes"
+            }
+        },
+        {
+            "name": "CholCheck",
+            "label": "Cholesterol Check in Last 5 Years",
+            "type": "binary",
+            "allowed_values": {
+                "0": "No",
+                "1": "Yes"
+            }
+        },
+        {
+            "name": "BMI",
+            "label": "Body Mass Index",
+            "type": "number",
+            "allowed_range": {
+                "min": 1,
+                "max": 100
+            }
+        },
+        {
+            "name": "Smoker",
+            "label": "Smoking History",
+            "type": "binary",
+            "allowed_values": {
+                "0": "No",
+                "1": "Yes"
+            }
+        },
+        {
+            "name": "Stroke",
+            "label": "Stroke History",
+            "type": "binary",
+            "allowed_values": {
+                "0": "No",
+                "1": "Yes"
+            }
+        },
+        {
+            "name": "HeartDiseaseorAttack",
+            "label": "Heart Disease or Heart Attack History",
+            "type": "binary",
+            "allowed_values": {
+                "0": "No",
+                "1": "Yes"
+            }
+        },
+        {
+            "name": "PhysActivity",
+            "label": "Physical Activity in Last 30 Days",
+            "type": "binary",
+            "allowed_values": {
+                "0": "No",
+                "1": "Yes"
+            }
+        },
+        {
+            "name": "Fruits",
+            "label": "Consumes Fruit Regularly",
+            "type": "binary",
+            "allowed_values": {
+                "0": "No",
+                "1": "Yes"
+            }
+        },
+        {
+            "name": "Veggies",
+            "label": "Consumes Vegetables Regularly",
+            "type": "binary",
+            "allowed_values": {
+                "0": "No",
+                "1": "Yes"
+            }
+        },
+        {
+            "name": "HvyAlcoholConsump",
+            "label": "Heavy Alcohol Consumption Indicator",
+            "type": "binary",
+            "allowed_values": {
+                "0": "No",
+                "1": "Yes"
+            }
+        },
+        {
+            "name": "AnyHealthcare",
+            "label": "Has Healthcare Coverage",
+            "type": "binary",
+            "allowed_values": {
+                "0": "No",
+                "1": "Yes"
+            }
+        },
+        {
+            "name": "NoDocbcCost",
+            "label": "Could Not See Doctor Because of Cost",
+            "type": "binary",
+            "allowed_values": {
+                "0": "No",
+                "1": "Yes"
+            }
+        },
+        {
+            "name": "GenHlth",
+            "label": "General Health Rating",
+            "type": "ordinal",
+            "allowed_values": {
+                "1": "Excellent",
+                "2": "Very good",
+                "3": "Good",
+                "4": "Fair",
+                "5": "Poor"
+            }
+        },
+        {
+            "name": "MentHlth",
+            "label": "Poor Mental Health Days in Last 30 Days",
+            "type": "number",
+            "allowed_range": {
+                "min": 0,
+                "max": 30
+            }
+        },
+        {
+            "name": "PhysHlth",
+            "label": "Poor Physical Health Days in Last 30 Days",
+            "type": "number",
+            "allowed_range": {
+                "min": 0,
+                "max": 30
+            }
+        },
+        {
+            "name": "DiffWalk",
+            "label": "Difficulty Walking or Climbing Stairs",
+            "type": "binary",
+            "allowed_values": {
+                "0": "No",
+                "1": "Yes"
+            }
+        },
+        {
+            "name": "Age",
+            "label": "Age Group",
+            "type": "ordinal",
+            "allowed_values": {
+                "1": "18-24",
+                "2": "25-29",
+                "3": "30-34",
+                "4": "35-39",
+                "5": "40-44",
+                "6": "45-49",
+                "7": "50-54",
+                "8": "55-59",
+                "9": "60-64",
+                "10": "65-69",
+                "11": "70-74",
+                "12": "75-79",
+                "13": "80 or older"
+            }
+        }
+    ]
+}

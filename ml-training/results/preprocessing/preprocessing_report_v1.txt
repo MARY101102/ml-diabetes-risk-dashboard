@@ -1,0 +1,250 @@
+STEP 3 PREPROCESSING REPORT
+======================================================================
+
+Project:
+Machine Learning-Based Diabetes Risk Estimation Dashboard
+
+Raw Dataset Summary:
+- Raw rows: 253680
+- Raw columns: 22
+- Total missing values: 0
+- Duplicate rows detected: 24206
+
+Target Variable:
+- Diabetes_binary
+- 0 = No diabetes
+- 1 = Prediabetes or diabetes
+
+Important Responsible Use Note:
+- The positive class should not be displayed as a confirmed medical diagnosis.
+- The final dashboard should say estimated diabetes-related risk or model probability of positive dataset class.
+
+Feature Decision for Version 1:
+- Selected input features: 18
+  - HighBP
+  - HighChol
+  - CholCheck
+  - BMI
+  - Smoker
+  - Stroke
+  - HeartDiseaseorAttack
+  - PhysActivity
+  - Fruits
+  - Veggies
+  - HvyAlcoholConsump
+  - AnyHealthcare
+  - NoDocbcCost
+  - GenHlth
+  - MentHlth
+  - PhysHlth
+  - DiffWalk
+  - Age
+
+Excluded Features for Version 1:
+  - Sex
+  - Education
+  - Income
+
+Reason for exclusion:
+- Sex, Education and Income are excluded from the first public-facing version because they are sensitive demographic or socioeconomic variables.
+
+Duplicate Row Decision:
+- Duplicate rows are kept in Version 1 because this is a survey-based dataset and multiple participants may provide identical answers.
+
+Missing Value Decision:
+- No missing values were detected, so no imputation was applied.
+
+Class Imbalance Observation:
+ target_value                 meaning  count  percentage
+            0             No diabetes 218334       86.07
+            1 Prediabetes or diabetes  35346       13.93
+
+- The dataset is imbalanced because the positive class is much smaller than the negative class.
+- Stratified train/validation/test splitting was used to preserve class proportions.
+- Oversampling or undersampling was not applied in Step 3.
+
+Processed Dataset Summary:
+- Processed rows: 253680
+- Processed columns: 19
+- Processed columns include target + selected features.
+
+Processed Target Distribution:
+ target_value                 meaning  count  percentage
+            0             No diabetes 218334       86.07
+            1 Prediabetes or diabetes  35346       13.93
+
+Train/Validation/Test Split:
+- Train rows: 177576
+- Validation rows: 38052
+- Test rows: 38052
+
+Train Target Distribution:
+ target_value                 meaning  count  percentage
+            0             No diabetes 152834       86.07
+            1 Prediabetes or diabetes  24742       13.93
+
+Validation Target Distribution:
+ target_value                 meaning  count  percentage
+            0             No diabetes  32750       86.07
+            1 Prediabetes or diabetes   5302       13.93
+
+Test Target Distribution:
+ target_value                 meaning  count  percentage
+            0             No diabetes  32750       86.07
+            1 Prediabetes or diabetes   5302       13.93
+
+Binary Column Validation:
+{
+    "Diabetes_binary": {
+        "unique_values": [
+            0,
+            1
+        ],
+        "is_valid_binary": true
+    },
+    "HighBP": {
+        "unique_values": [
+            0,
+            1
+        ],
+        "is_valid_binary": true
+    },
+    "HighChol": {
+        "unique_values": [
+            0,
+            1
+        ],
+        "is_valid_binary": true
+    },
+    "CholCheck": {
+        "unique_values": [
+            0,
+            1
+        ],
+        "is_valid_binary": true
+    },
+    "Smoker": {
+        "unique_values": [
+            0,
+            1
+        ],
+        "is_valid_binary": true
+    },
+    "Stroke": {
+        "unique_values": [
+            0,
+            1
+        ],
+        "is_valid_binary": true
+    },
+    "HeartDiseaseorAttack": {
+        "unique_values": [
+            0,
+            1
+        ],
+        "is_valid_binary": true
+    },
+    "PhysActivity": {
+        "unique_values": [
+            0,
+            1
+        ],
+        "is_valid_binary": true
+    },
+    "Fruits": {
+        "unique_values": [
+            0,
+            1
+        ],
+        "is_valid_binary": true
+    },
+    "Veggies": {
+        "unique_values": [
+            0,
+            1
+        ],
+        "is_valid_binary": true
+    },
+    "HvyAlcoholConsump": {
+        "unique_values": [
+            0,
+            1
+        ],
+        "is_valid_binary": true
+    },
+    "AnyHealthcare": {
+        "unique_values": [
+            0,
+            1
+        ],
+        "is_valid_binary": true
+    },
+    "NoDocbcCost": {
+        "unique_values": [
+            0,
+            1
+        ],
+        "is_valid_binary": true
+    },
+    "DiffWalk": {
+        "unique_values": [
+            0,
+            1
+        ],
+        "is_valid_binary": true
+    }
+}
+
+Range Validation:
+{
+    "Diabetes_binary": {
+        "expected_min": 0,
+        "expected_max": 1,
+        "actual_min": 0.0,
+        "actual_max": 1.0,
+        "is_valid_range": true
+    },
+    "BMI": {
+        "expected_min": 1,
+        "expected_max": 100,
+        "actual_min": 12.0,
+        "actual_max": 98.0,
+        "is_valid_range": true
+    },
+    "GenHlth": {
+        "expected_min": 1,
+        "expected_max": 5,
+        "actual_min": 1.0,
+        "actual_max": 5.0,
+        "is_valid_range": true
+    },
+    "MentHlth": {
+        "expected_min": 0,
+        "expected_max": 30,
+        "actual_min": 0.0,
+        "actual_max": 30.0,
+        "is_valid_range": true
+    },
+    "PhysHlth": {
+        "expected_min": 0,
+        "expected_max": 30,
+        "actual_min": 0.0,
+        "actual_max": 30.0,
+        "is_valid_range": true
+    },
+    "Age": {
+        "expected_min": 1,
+        "expected_max": 13,
+        "actual_min": 1.0,
+        "actual_max": 13.0,
+        "is_valid_range": true
+    }
+}
+
+Output Files Created:
+- ml-training/data/processed/diabetes_modeling_v1.csv
+- ml-training/data/processed/train_v1.csv
+- ml-training/data/processed/validation_v1.csv
+- ml-training/data/processed/test_v1.csv
+- ml-training/data/processed/feature_schema_v1.json
+- ml-training/results/preprocessing/preprocessing_report_v1.txt

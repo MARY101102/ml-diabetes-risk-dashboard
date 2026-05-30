@@ -1,0 +1,106 @@
+{
+    "target_column": "Diabetes_binary",
+    "selected_features_v1": [
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "BMI",
+        "Smoker",
+        "Stroke",
+        "HeartDiseaseorAttack",
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "HvyAlcoholConsump",
+        "AnyHealthcare",
+        "NoDocbcCost",
+        "GenHlth",
+        "MentHlth",
+        "PhysHlth",
+        "DiffWalk",
+        "Age"
+    ],
+    "excluded_features_v1": [
+        "Sex",
+        "Education",
+        "Income"
+    ],
+    "raw_shape": [
+        253680,
+        22
+    ],
+    "processed_shape": [
+        253680,
+        19
+    ],
+    "train_shape": [
+        177576,
+        19
+    ],
+    "validation_shape": [
+        38052,
+        19
+    ],
+    "test_shape": [
+        38052,
+        19
+    ],
+    "duplicate_rows_kept": 24206,
+    "missing_values": 0,
+    "raw_target_distribution": [
+        {
+            "target_value": 0,
+            "meaning": "No diabetes",
+            "count": 218334,
+            "percentage": 86.07
+        },
+        {
+            "target_value": 1,
+            "meaning": "Prediabetes or diabetes",
+            "count": 35346,
+            "percentage": 13.93
+        }
+    ],
+    "train_target_distribution": [
+        {
+            "target_value": 0,
+            "meaning": "No diabetes",
+            "count": 152834,
+            "percentage": 86.07
+        },
+        {
+            "target_value": 1,
+            "meaning": "Prediabetes or diabetes",
+            "count": 24742,
+            "percentage": 13.93
+        }
+    ],
+    "validation_target_distribution": [
+        {
+            "target_value": 0,
+            "meaning": "No diabetes",
+            "count": 32750,
+            "percentage": 86.07
+        },
+        {
+            "target_value": 1,
+            "meaning": "Prediabetes or diabetes",
+            "count": 5302,
+            "percentage": 13.93
+        }
+    ],
+    "test_target_distribution": [
+        {
+            "target_value": 0,
+            "meaning": "No diabetes",
+            "count": 32750,
+            "percentage": 86.07
+        },
+        {
+            "target_value": 1,
+            "meaning": "Prediabetes or diabetes",
+            "count": 5302,
+            "percentage": 13.93
+        }
+    ]
+}
