@@ -36,8 +36,9 @@ Target variable:
 ## Current Development Status
 
 - [x] Project initialized
-- [ ] Dataset collected
-- [ ] Exploratory data analysis
+- [x] Dataset collected
+- [x] Initial dataset understanding and EDA
+- [ ] Data preprocessing
 - [ ] Model training
 - [ ] API development
 - [ ] Frontend dashboard
