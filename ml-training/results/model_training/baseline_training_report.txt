@@ -1,0 +1,35 @@
+STEP 4 BASELINE MODEL TRAINING REPORT
+======================================================================
+
+Project:
+Machine Learning-Based Diabetes Risk Estimation Dashboard
+
+Important Note:
+- This step used the train and validation datasets only.
+- The test dataset was not used for model selection.
+
+Dataset Split Used:
+- Train shape: (177576, 19)
+- Validation shape: (38052, 19)
+
+Models Trained:
+- Logistic Regression
+- Decision Tree
+- Random Forest
+
+Validation Metrics:
+         model_name  accuracy  precision  recall  f1_score  roc_auc
+logistic_regression    0.7281     0.3073  0.7586    0.4374   0.8191
+      decision_tree    0.7035     0.2905  0.7820    0.4236   0.8139
+      random_forest    0.7397     0.3153  0.7412    0.4424   0.8210
+
+Current Best Baseline Model:
+- random_forest
+
+Model Selection Rule:
+- Because the dataset is imbalanced, the model should not be selected using accuracy alone.
+- Recall, F1-score and ROC-AUC are more important for this risk-estimation project.
+
+Responsible Use Note:
+- The output should be presented as an estimated diabetes-related risk or model probability of the positive dataset class.
+- It must not be presented as a confirmed medical diagnosis.

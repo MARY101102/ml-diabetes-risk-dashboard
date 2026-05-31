@@ -1,0 +1,9 @@
+{
+    "best_baseline_model": "random_forest",
+    "selection_priority": [
+        "f1_score",
+        "recall",
+        "roc_auc"
+    ],
+    "note": "This is the best baseline model based on validation metrics. The test dataset has not been used yet."
+}

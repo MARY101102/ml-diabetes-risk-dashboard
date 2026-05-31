@@ -35,11 +35,18 @@ Target variable:
 
 ## Current Development Status
 
+## Current Development Status
+
+## Current Development Status
+
 - [x] Project initialized
 - [x] Dataset collected
 - [x] Initial dataset understanding and EDA
-- [ ] Data preprocessing
-- [ ] Model training
+- [x] Data preprocessing and feature decision
+- [x] Baseline model training
+- [ ] Model evaluation and final model selection
+- [ ] Probability calibration
+- [ ] Explainable AI
 - [ ] API development
 - [ ] Frontend dashboard
 - [ ] Authentication
