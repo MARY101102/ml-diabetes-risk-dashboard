@@ -1,0 +1,39 @@
+{
+    "project": "Machine Learning-Based Diabetes Risk Estimation Dashboard",
+    "model_version": "diabetes_risk_model_v1",
+    "selected_model": "random_forest",
+    "target_column": "Diabetes_binary",
+    "target_meaning": {
+        "0": "No diabetes",
+        "1": "Prediabetes or diabetes"
+    },
+    "selected_features": [
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "BMI",
+        "Smoker",
+        "Stroke",
+        "HeartDiseaseorAttack",
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "HvyAlcoholConsump",
+        "AnyHealthcare",
+        "NoDocbcCost",
+        "GenHlth",
+        "MentHlth",
+        "PhysHlth",
+        "DiffWalk",
+        "Age"
+    ],
+    "evaluation_dataset": "test_v1.csv",
+    "metrics": {
+        "accuracy": 0.746,
+        "precision": 0.3218,
+        "recall": 0.7429,
+        "f1_score": 0.449,
+        "roc_auc": 0.8234
+    },
+    "responsible_use_note": "This model is for educational risk estimation only. It must not be used as a medical diagnostic system."
+}

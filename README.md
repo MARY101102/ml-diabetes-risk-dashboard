@@ -44,7 +44,7 @@ Target variable:
 - [x] Initial dataset understanding and EDA
 - [x] Data preprocessing and feature decision
 - [x] Baseline model training
-- [ ] Model evaluation and final model selection
+- [x] Model evaluation and final model selection
 - [ ] Probability calibration
 - [ ] Explainable AI
 - [ ] API development

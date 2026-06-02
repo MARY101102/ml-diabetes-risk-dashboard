@@ -1,0 +1,42 @@
+STEP 5 FINAL MODEL EVALUATION REPORT
+======================================================================
+
+Project:
+Machine Learning-Based Diabetes Risk Estimation Dashboard
+
+Final Selected Model:
+- random_forest
+
+Evaluation Dataset:
+- test_v1.csv
+- Test shape: (38052, 19)
+
+Important Evaluation Rule:
+- The test dataset was used only after selecting the best baseline model from validation results.
+- The test dataset was not used for training or model tuning.
+
+Final Test Metrics:
+- Accuracy : 0.746
+- Precision: 0.3218
+- Recall   : 0.7429
+- F1-score : 0.449
+- ROC-AUC  : 0.8234
+
+Confusion Matrix Values:
+- True Negative : 24447
+- False Positive: 8303
+- False Negative: 1363
+- True Positive : 3939
+
+Metric Interpretation:
+- Accuracy is not the only selection metric because the dataset is imbalanced.
+- Recall, F1-score and ROC-AUC are more useful for understanding performance on the positive class.
+- False negatives are important to monitor because they represent positive-class records predicted as negative.
+
+Responsible Use Note:
+- The model predicts the dataset label for prediabetes or diabetes.
+- The dashboard must not display the output as a confirmed medical diagnosis.
+- The result should be shown as an estimated diabetes-related risk or model probability of the positive dataset class.
+
+Next Step:
+- Step 6 should calibrate predicted probabilities before showing confidence-like values in the dashboard.
