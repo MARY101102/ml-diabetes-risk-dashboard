@@ -1,0 +1,19 @@
+feature,feature_label,mean_absolute_shap_value
+GenHlth,General health rating,0.11309788137815675
+HighBP,High blood pressure,0.09970946351498473
+BMI,Body Mass Index,0.07406750939466417
+Age,Age group,0.06069923180266049
+HighChol,High cholesterol,0.06013641040946675
+DiffWalk,Difficulty walking or climbing stairs,0.023465601557078133
+HeartDiseaseorAttack,Heart disease or heart attack history,0.013148613018656687
+HvyAlcoholConsump,Heavy alcohol consumption indicator,0.00992469836414088
+PhysHlth,Poor physical health days,0.009454777106245097
+MentHlth,Poor mental health days,0.008655986745306123
+PhysActivity,Physical activity in last 30 days,0.008288447163109594
+CholCheck,Cholesterol check in last 5 years,0.007041590666313505
+Fruits,Fruit consumption,0.003369003934528588
+Smoker,Smoking history,0.003356618306807114
+Stroke,Stroke history,0.0021694943208815107
+Veggies,Vegetable consumption,0.0021151571366640537
+AnyHealthcare,Healthcare coverage,0.001473665939179524
+NoDocbcCost,Could not see doctor because of cost,0.001152479167941827

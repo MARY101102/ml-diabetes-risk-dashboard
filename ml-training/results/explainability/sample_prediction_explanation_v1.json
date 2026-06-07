@@ -1,0 +1,209 @@
+{
+    "selected_sample_position": 950,
+    "calibrated_probability": 0.7576,
+    "display_probability": "75.8%",
+    "risk_label": "High estimated risk",
+    "important_note": "This is a model explanation for the positive dataset class representing prediabetes or diabetes. It is not a medical diagnosis.",
+    "top_factors_increasing_estimated_risk": [
+        {
+            "feature": "BMI",
+            "label": "Body Mass Index",
+            "input_value": 50.0,
+            "shap_value": 0.091376,
+            "explanation": "Body Mass Index increased the model's estimated probability for the positive dataset class."
+        },
+        {
+            "feature": "GenHlth",
+            "label": "General health rating",
+            "input_value": 4.0,
+            "shap_value": 0.089443,
+            "explanation": "General health rating increased the model's estimated probability for the positive dataset class."
+        },
+        {
+            "feature": "HighBP",
+            "label": "High blood pressure",
+            "input_value": 1.0,
+            "shap_value": 0.069171,
+            "explanation": "High blood pressure increased the model's estimated probability for the positive dataset class."
+        },
+        {
+            "feature": "DiffWalk",
+            "label": "Difficulty walking or climbing stairs",
+            "input_value": 1.0,
+            "shap_value": 0.056203,
+            "explanation": "Difficulty walking or climbing stairs increased the model's estimated probability for the positive dataset class."
+        },
+        {
+            "feature": "HighChol",
+            "label": "High cholesterol",
+            "input_value": 1.0,
+            "shap_value": 0.05143,
+            "explanation": "High cholesterol increased the model's estimated probability for the positive dataset class."
+        }
+    ],
+    "top_factors_reducing_estimated_risk": [
+        {
+            "feature": "MentHlth",
+            "label": "Poor mental health days",
+            "input_value": 2.0,
+            "shap_value": -0.00784,
+            "explanation": "Poor mental health days reduced the model's estimated probability for the positive dataset class."
+        },
+        {
+            "feature": "Veggies",
+            "label": "Vegetable consumption",
+            "input_value": 1.0,
+            "shap_value": -0.001366,
+            "explanation": "Vegetable consumption reduced the model's estimated probability for the positive dataset class."
+        },
+        {
+            "feature": "Stroke",
+            "label": "Stroke history",
+            "input_value": 0.0,
+            "shap_value": -0.001198,
+            "explanation": "Stroke history reduced the model's estimated probability for the positive dataset class."
+        },
+        {
+            "feature": "Fruits",
+            "label": "Fruit consumption",
+            "input_value": 0.0,
+            "shap_value": -0.00042,
+            "explanation": "Fruit consumption reduced the model's estimated probability for the positive dataset class."
+        },
+        {
+            "feature": "Smoker",
+            "label": "Smoking history",
+            "input_value": 1.0,
+            "shap_value": -4.6e-05,
+            "explanation": "Smoking history reduced the model's estimated probability for the positive dataset class."
+        }
+    ],
+    "all_local_feature_effects": [
+        {
+            "feature": "BMI",
+            "feature_label": "Body Mass Index",
+            "input_value": 50,
+            "shap_value": 0.09137581073309224,
+            "absolute_shap_value": 0.09137581073309224
+        },
+        {
+            "feature": "GenHlth",
+            "feature_label": "General health rating",
+            "input_value": 4,
+            "shap_value": 0.08944276392488096,
+            "absolute_shap_value": 0.08944276392488096
+        },
+        {
+            "feature": "HighBP",
+            "feature_label": "High blood pressure",
+            "input_value": 1,
+            "shap_value": 0.06917101018246258,
+            "absolute_shap_value": 0.06917101018246258
+        },
+        {
+            "feature": "DiffWalk",
+            "feature_label": "Difficulty walking or climbing stairs",
+            "input_value": 1,
+            "shap_value": 0.05620342486556862,
+            "absolute_shap_value": 0.05620342486556862
+        },
+        {
+            "feature": "HighChol",
+            "feature_label": "High cholesterol",
+            "input_value": 1,
+            "shap_value": 0.0514302924797014,
+            "absolute_shap_value": 0.0514302924797014
+        },
+        {
+            "feature": "HeartDiseaseorAttack",
+            "feature_label": "Heart disease or heart attack history",
+            "input_value": 1,
+            "shap_value": 0.03763774282155451,
+            "absolute_shap_value": 0.03763774282155451
+        },
+        {
+            "feature": "PhysHlth",
+            "feature_label": "Poor physical health days",
+            "input_value": 14,
+            "shap_value": 0.010842417883944118,
+            "absolute_shap_value": 0.010842417883944118
+        },
+        {
+            "feature": "PhysActivity",
+            "feature_label": "Physical activity in last 30 days",
+            "input_value": 0,
+            "shap_value": 0.009462794212578474,
+            "absolute_shap_value": 0.009462794212578474
+        },
+        {
+            "feature": "MentHlth",
+            "feature_label": "Poor mental health days",
+            "input_value": 2,
+            "shap_value": -0.007839579529954743,
+            "absolute_shap_value": 0.007839579529954743
+        },
+        {
+            "feature": "HvyAlcoholConsump",
+            "feature_label": "Heavy alcohol consumption indicator",
+            "input_value": 0,
+            "shap_value": 0.004478414800402981,
+            "absolute_shap_value": 0.004478414800402981
+        },
+        {
+            "feature": "Age",
+            "feature_label": "Age group",
+            "input_value": 8,
+            "shap_value": 0.0019636818037403665,
+            "absolute_shap_value": 0.0019636818037403665
+        },
+        {
+            "feature": "CholCheck",
+            "feature_label": "Cholesterol check in last 5 years",
+            "input_value": 1,
+            "shap_value": 0.001886921280059823,
+            "absolute_shap_value": 0.001886921280059823
+        },
+        {
+            "feature": "Veggies",
+            "feature_label": "Vegetable consumption",
+            "input_value": 1,
+            "shap_value": -0.001365829022021064,
+            "absolute_shap_value": 0.001365829022021064
+        },
+        {
+            "feature": "Stroke",
+            "feature_label": "Stroke history",
+            "input_value": 0,
+            "shap_value": -0.0011983604801250902,
+            "absolute_shap_value": 0.0011983604801250902
+        },
+        {
+            "feature": "NoDocbcCost",
+            "feature_label": "Could not see doctor because of cost",
+            "input_value": 0,
+            "shap_value": 0.0010269643084739378,
+            "absolute_shap_value": 0.0010269643084739378
+        },
+        {
+            "feature": "AnyHealthcare",
+            "feature_label": "Healthcare coverage",
+            "input_value": 1,
+            "shap_value": 0.0009415933813584835,
+            "absolute_shap_value": 0.0009415933813584835
+        },
+        {
+            "feature": "Fruits",
+            "feature_label": "Fruit consumption",
+            "input_value": 0,
+            "shap_value": -0.0004200515949154408,
+            "absolute_shap_value": 0.0004200515949154408
+        },
+        {
+            "feature": "Smoker",
+            "feature_label": "Smoking history",
+            "input_value": 1,
+            "shap_value": -4.634668845423189e-05,
+            "absolute_shap_value": 4.634668845423189e-05
+        }
+    ]
+}

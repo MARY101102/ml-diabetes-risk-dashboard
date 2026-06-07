@@ -1,0 +1,60 @@
+{
+    "result_fields": {
+        "risk_label": "Low / Medium / High estimated risk",
+        "calibrated_probability": "Model probability of positive dataset class",
+        "top_factors_increasing_estimated_risk": "Features that increased model probability",
+        "top_factors_reducing_estimated_risk": "Features that reduced model probability",
+        "important_note": "Explanation describes model behavior, not medical diagnosis."
+    },
+    "example_response": {
+        "risk_label": "High estimated risk",
+        "display_probability": "75.8%",
+        "top_factors_increasing_estimated_risk": [
+            {
+                "feature": "BMI",
+                "label": "Body Mass Index",
+                "input_value": 50.0,
+                "shap_value": 0.091376,
+                "explanation": "Body Mass Index increased the model's estimated probability for the positive dataset class."
+            },
+            {
+                "feature": "GenHlth",
+                "label": "General health rating",
+                "input_value": 4.0,
+                "shap_value": 0.089443,
+                "explanation": "General health rating increased the model's estimated probability for the positive dataset class."
+            },
+            {
+                "feature": "HighBP",
+                "label": "High blood pressure",
+                "input_value": 1.0,
+                "shap_value": 0.069171,
+                "explanation": "High blood pressure increased the model's estimated probability for the positive dataset class."
+            }
+        ],
+        "top_factors_reducing_estimated_risk": [
+            {
+                "feature": "MentHlth",
+                "label": "Poor mental health days",
+                "input_value": 2.0,
+                "shap_value": -0.00784,
+                "explanation": "Poor mental health days reduced the model's estimated probability for the positive dataset class."
+            },
+            {
+                "feature": "Veggies",
+                "label": "Vegetable consumption",
+                "input_value": 1.0,
+                "shap_value": -0.001366,
+                "explanation": "Vegetable consumption reduced the model's estimated probability for the positive dataset class."
+            },
+            {
+                "feature": "Stroke",
+                "label": "Stroke history",
+                "input_value": 0.0,
+                "shap_value": -0.001198,
+                "explanation": "Stroke history reduced the model's estimated probability for the positive dataset class."
+            }
+        ],
+        "disclaimer": "This is an educational machine learning risk estimate. It is not a medical diagnosis."
+    }
+}

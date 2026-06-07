@@ -1,0 +1,54 @@
+STEP 7 EXPLAINABLE AI REPORT
+======================================================================
+
+Project:
+Machine Learning-Based Diabetes Risk Estimation Dashboard
+
+Purpose:
+- Explain the model globally and locally using SHAP values.
+
+Model Package:
+- Version: diabetes_risk_calibrated_model_v1
+- Calibration method: isotonic
+
+Global Explanation:
+- Global feature importance shows which features generally influence the model most across sampled validation records.
+
+Top Global Features:
+- General health rating: 0.113098
+- High blood pressure: 0.099709
+- Body Mass Index: 0.074068
+- Age group: 0.060699
+- High cholesterol: 0.060136
+- Difficulty walking or climbing stairs: 0.023466
+- Heart disease or heart attack history: 0.013149
+- Heavy alcohol consumption indicator: 0.009925
+- Poor physical health days: 0.009455
+- Poor mental health days: 0.008656
+
+Sample Local Explanation:
+- Risk label: High estimated risk
+- Calibrated probability: 75.8%
+
+Top Factors Increasing Estimated Risk:
+- Body Mass Index (value=50.0, SHAP=0.091376)
+- General health rating (value=4.0, SHAP=0.089443)
+- High blood pressure (value=1.0, SHAP=0.069171)
+- Difficulty walking or climbing stairs (value=1.0, SHAP=0.056203)
+- High cholesterol (value=1.0, SHAP=0.05143)
+
+Top Factors Reducing Estimated Risk:
+- Poor mental health days (value=2.0, SHAP=-0.00784)
+- Vegetable consumption (value=1.0, SHAP=-0.001366)
+- Stroke history (value=0.0, SHAP=-0.001198)
+- Fruit consumption (value=0.0, SHAP=-0.00042)
+- Smoking history (value=1.0, SHAP=-4.6e-05)
+
+Dashboard Use:
+- The dashboard can show the top increasing and reducing factors for each prediction.
+- These explanations describe model behavior, not medical causes.
+
+Responsible Use Note:
+- Do not say these factors prove the user has diabetes.
+- Say these factors influenced the model's estimated risk.
+- This system is for educational portfolio use, not diagnosis.

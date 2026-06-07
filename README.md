@@ -33,11 +33,6 @@ Target variable:
 - `0` = No diabetes
 - `1` = Prediabetes or diabetes
 
-## Current Development Status
-
-## Current Development Status
-
-## Current Development Status
 
 ## Current Development Status
 
@@ -48,7 +43,7 @@ Target variable:
 - [x] Baseline model training
 - [x] Model evaluation and final model selection
 - [x] Probability calibration
-- [ ] Explainable AI
+- [x] Explainable AI
 - [ ] API development
 - [ ] Frontend dashboard
 - [ ] Authentication
