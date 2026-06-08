@@ -44,8 +44,9 @@ Target variable:
 - [x] Model evaluation and final model selection
 - [x] Probability calibration
 - [x] Explainable AI
-- [ ] API development
-- [ ] Frontend dashboard
+- [x] API development
+- [x] Frontend dashboard
 - [ ] Authentication
+- [ ] History saving
 - [ ] PDF reporting
 - [ ] Deployment
